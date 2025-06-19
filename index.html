@@ -12,9 +12,28 @@
   <body>
     <!-- <div id="app"></div> -->
      <div class="h-screen grid grid-cols-[1.5fr_4fr] grid-rows-[1.5fr_5fr]">
-       <header class="bg-amber-300">Header</header>
-       <aside class="bg-sky-400 col-end-2 row-span-full">SideBar</aside>
-       <main class="bg-fuchsia-400 row-start-2 col-start-2">Main</main>
+       <header class="bg-white grid grid-rows-[1fr_2fr] py-4 px-6">
+        <!-- HEADER -->
+         <div class="flex justify-between items-center">
+          <!-- Search -->
+          <div class="flex gap-3">
+            <img src="./public/search.svg" alt="search">
+             <input class="bg-gray-300 rounded-full w-100" type="search" name="" id="">
+          </div>
+          <!-- Notification, icon and name -->
+           <div class="flex items-center gap-2 ">
+             <img src="./public/notifications.svg" alt="notifications">
+             <div class="flex -space-x-2 overflow-hidden">
+              <img class="inline-block size-15 rounded-full ring-2 ring-white" src="https://upload.wikimedia.org/wikipedia/commons/6/61/096-grinning-cat-face.svg" alt="cat face drawing with yellow background" />
+            </div>
+            <p class="place-content-center shrink-0">Morgan Oakley</p>
+          </div>
+           
+         </div>
+
+      </header>
+       <aside class="bg-sky-600 text-white col-end-2 row-span-full">SideBar</aside>
+       <main class="bg-gray-300 row-start-2 col-start-2">Main</main>
      </div>
   </body>
 </html>
