@@ -1,70 +1,200 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/monitor.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/styles.css" rel="stylesheet">
+    <link href="/src/styles.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script type="module" src="/src/main.js" defer></script>
     <title>Odin Admin Dashboard</title>
   </head>
   <body>
     <!-- <div id="app"></div> -->
-     <div class="h-screen grid grid-cols-[1.5fr_4fr] grid-rows-[1.5fr_5fr]">
-
-       <!-- HEADER -->
-        <!-------------------------------------------------------------------->
-       <header class="bg-white grid px-6">
-
-         <!-- UPPER PART -->
-         <div class="grid gird-cols-[2fr_1fr]">
-        
+    <div class="h-screen grid grid-cols-[1fr_4fr] grid-rows-[1.5fr_5fr]">
+      <!-- HEADER -->
+      <!-------------------------------------------------------------------->
+      <header class="bg-white grid px-6">
+        <!-- UPPER PART -->
+        <div class="grid gird-cols-[2fr_1fr]">
           <!-- Search -->
           <div class="flex gap-3 col-start-1 items-center">
-            <img src="./public/search.svg" alt="search">
-             <input class="bg-gray-300 rounded-full w-[100%]" type="search" name="" id="">
+            <img src="./public/search.svg" alt="search" />
+            <input
+              class="bg-gray-300 rounded-full w-[100%]"
+              type="search"
+              name=""
+              id=""
+            />
           </div>
-        
+
           <!-- Notification, icon and name -->
-           <div class="flex justify-end items-center gap-2 col-start-2">
-             <img src="./public/notifications.svg" alt="notifications">
-             <div class="flex -space-x-2 overflow-hidden">
-              <img class="inline-block size-15 rounded-full ring-2 ring-white" src="https://upload.wikimedia.org/wikipedia/commons/6/61/096-grinning-cat-face.svg" alt="cat face drawing with yellow background" />
+          <div class="flex justify-end items-center gap-2 col-start-2">
+            <img src="./public/notifications.svg" alt="notifications" />
+            <div class="flex -space-x-2 overflow-hidden">
+              <img
+                class="inline-block size-15 rounded-full ring-2 ring-white"
+                src="https://upload.wikimedia.org/wikipedia/commons/6/61/096-grinning-cat-face.svg"
+                alt="cat face drawing with yellow background"
+              />
             </div>
-            <p class="place-content-center shrink-0">Morgan Oakley</p>
-          </div> 
-         </div>
-        
-         <!-- LOWER PART -->
-         <div class="grid grid-cols-[2fr_1fr] mt-[-30px]">
-        
+            <p class="place-content-center shrink-0 font-bold">Morgan Oakley</p>
+          </div>
+        </div>
+
+        <!-- LOWER PART -->
+        <div class="grid grid-cols-[2fr_1fr] mt-[-30px]">
           <!-- USER IMAGE AND NAME -->
           <div class="flex items-center">
-            <img class="inline-block size-20 rounded-full ring-2 ring-white" src="https://upload.wikimedia.org/wikipedia/commons/6/61/096-grinning-cat-face.svg" alt="cat face drawing with yellow background" />
+            <img
+              class="inline-block size-20 rounded-full ring-2 ring-white"
+              src="https://upload.wikimedia.org/wikipedia/commons/6/61/096-grinning-cat-face.svg"
+              alt="cat face drawing with yellow background"
+            />
             <div class="flex flex-col">
-              <p>Hi there,</p>
-              <p>Morgan Oakley (@morgan)</p>
+              <p class="font-bold">Hi there,</p>
+              <p class="text-3xl font-bold">Morgan Oakley (@morgan)</p>
             </div>
           </div>
 
           <!-- LIST OF BUTTONS -->
           <ul class="flex gap-4 items-center justify-end">
-            <li><button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">New</button>
-</li>
-            <li><button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Upload</button></li>
-            <li><button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Share</button></li>
+            <li>
+              <button
+                type="button"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                New
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Upload
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Share
+              </button>
+            </li>
           </ul>
-         </div>
-         <!-------------------------------------------------------------------->
-
-         <!--SIDE PANEL-->
-
-
-
+        </div>
       </header>
-       <aside class="bg-sky-600 text-white col-end-2 row-span-full">SideBar</aside>
-       <main class="bg-gray-300 row-start-2 col-start-2">Main</main>
-     </div>
+
+      <!-------------------------------------------------------------------->
+      <!--SIDE PANEL-->
+      <aside
+        class="bg-sky-600 text-white col-end-2 row-span-full grid grid-rows-[1fr_6fr] gap-5"
+      >
+        <div class="flex justify-center items-center">
+          <img
+            src="./public/view-dashboard.svg"
+            alt="view dashboard"
+            width="20%"
+            height="20%"
+          />
+          <p class="font-bold text-4xl">Dashboard</p>
+        </div>
+        <div class="grid pl-6">
+          <ul class="grid font-bold">
+            <li class="flex items-center text-2xl">
+              <img
+                class="mr-3"
+                src="./public/home.svg"
+                alt=""
+                width="10%"
+                height="10%"
+              />
+              <p>Home</p>
+            </li>
+            <li class="flex items-center text-2xl">
+              <img
+                class="mr-3"
+                src="./public/card-account-details.svg"
+                alt=""
+                width="10%"
+                height="10%"
+              />Profile
+            </li>
+            <li class="flex items-center text-2xl">
+              <img
+                class="mr-3"
+                src="./public/message.svg"
+                alt=""
+                width="10%"
+                height="10%"
+              />Messages
+            </li>
+            <li class="flex items-center text-2xl">
+              <img
+                class="mr-3"
+                src="./public/clock-time-five.svg"
+                alt=""
+                width="10%"
+                height="10%"
+              />History
+            </li>
+            <li class="flex items-center text-2xl">
+              <img
+                class="mr-3"
+                src="./public/note-multiple.svg"
+                alt=""
+                width="10%"
+                height="10%"
+              />Tasks
+            </li>
+            <li class="flex items-center text-2xl">
+              <img
+                class="mr-3"
+                src="./public/account-group.svg"
+                alt=""
+                width="10%"
+                height="10%"
+              />Communites
+            </li>
+            <li></li>
+            <li></li>
+            <li class="flex items-center text-2xl">
+              <img
+                class="mr-3"
+                src="./public/cog.svg"
+                alt=""
+                width="10%"
+                height="10%"
+              />Settings
+            </li>
+            <li class="flex items-center text-2xl">
+              <img
+                class="mr-3"
+                src="./public/shield-check.svg"
+                alt=""
+                width="10%"
+                height="10%"
+              />Privacy
+            </li>
+            <li class="flex items-center text-2xl">
+              <img
+                class="mr-3"
+                src="./public/help.svg"
+                alt=""
+                width="10%"
+                height="10%"
+              />Support
+            </li>
+          </ul>
+          <ul class="grid justify-center"></ul>
+        </div>
+      </aside>
+
+      <!-------------------------------------------------------------------->
+      <!--MAIN-->
+      <main class="bg-gray-300 row-start-2 col-start-2">Main</main>
+    </div>
   </body>
 </html>
